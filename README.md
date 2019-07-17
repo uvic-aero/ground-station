@@ -17,7 +17,8 @@ python3 manage.py runserver
 ```sh
 django-admin startapp [newappname]
 ```
-1. Create views for application ```python
+1. Create views for application 
+```python
 # newappname/views.py
 
 from django.shortcuts import render
@@ -27,7 +28,8 @@ from django.http import HttpResponse
 def index(response):
     return HttpResponse("Hello, world. You're at the newapp index.")
 ```
-1. Create url endpoints for new views ```python
+2. Create url endpoints for new views 
+```python
 # newappname/urls.py
 from django.urls import path
 
@@ -37,7 +39,8 @@ urlpatterns = [
     path('', views.index, name='index'),
 ]
 ```
-1. Import url's into project ```python
+3. Import url's into project 
+```python
 # groundstation/urls.py
 from django.contrib import admin
 from django.urls import path, include
