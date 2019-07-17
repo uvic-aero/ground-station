@@ -1,5 +1,5 @@
 # Ground Station
-HTTP Server to store and serve data collected in flight.
+HTTP Server to store and serve data collected in flight. 
 
 ## Install
 ```sh
